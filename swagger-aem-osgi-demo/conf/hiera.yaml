@@ -1,0 +1,18 @@
+---
+version: 5
+defaults:
+  datadir: data
+  data_hash: yaml_data
+hierarchy:
+  - name: "OS release specific overrides"
+    path: "%{::os.family}/%{::os.name}-%{::os.release.major}.yaml"
+  - name: "OS family overrides"
+    path: "%{::os.family}/%{::os.name}.yaml"
+  - name: "User defined hiera file"
+    path: local.yaml
+  - name: "Event hiera"
+    path: "%{::event}.yaml"
+  - name: "Component hiera"
+    path: "%{::component}.yaml"
+  - name: "Common hiera"
+    path: common.yaml
