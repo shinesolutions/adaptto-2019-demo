@@ -71,15 +71,11 @@ translate_exit_code() {
 }
 
 PATH=/opt/puppetlabs/puppet/bin/:$PATH
-aem_username=admin
-aem_password=admin
 
 set +o errexit
 
 FACTER_tmp_dir=/tmp \
   FACTER_enable_saml=false \
-  FACTER_aem_username="${aem_username}" \
-  FACTER_aem_password="${aem_password}" \
   FACTER_aem_id="${aem_id}" \
   /opt/puppetlabs/bin/puppet apply \
   --detailed-exitcodes \

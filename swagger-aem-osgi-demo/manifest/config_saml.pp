@@ -2,8 +2,6 @@ class config_saml (
   $tmp_dir                        = $::tmp_dir,
   $add_group_memberships          = $::add_group_memberships,
   $aem_id                         = $::aem_id,
-  $aem_username                   = $::aem_username,
-  $aem_password                   = $::aem_password,
   $assertion_consumer_service_url = $::assertion_consumer_service_url,
   $clock_tolerance                = $::clock_tolerance,
   $create_user                    = $::create_user,
@@ -253,8 +251,6 @@ class config_saml (
 
       $default_params_add_certificate = {
         aem_id       => $aem_id,
-        aem_username => $aem_username,
-        aem_password => $aem_password,
         force        => true,
       }
 
@@ -278,8 +274,6 @@ class config_saml (
 
     $default_params_enable_saml = {
       aem_id       => $aem_id,
-      aem_username => $aem_username,
-      aem_password => $aem_password,
       tmp_dir      => $tmp_dir,
     }
 
@@ -291,8 +285,6 @@ class config_saml (
   } else {
     aem_resources::disable_saml { 'Disable SAML Authentication':
       aem_id       => $aem_id,
-      aem_username => $aem_username,
-      aem_password => $aem_password
     }
   }
 }

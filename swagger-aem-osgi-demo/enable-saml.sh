@@ -220,15 +220,11 @@ translate_exit_code() {
 }
 
 PATH=/opt/puppetlabs/puppet/bin/:$PATH
-aem_username=admin
-aem_password=admin
 
 set +o errexit
 
 FACTER_tmp_dir=/tmp \
 FACTER_enable_saml=true \
-  FACTER_aem_username="${aem_username}" \
-  FACTER_aem_password="${aem_password}" \
   FACTER_add_group_memberships="${add_group_memberships}" \
   FACTER_aem_id="${aem_id}" \
   FACTER_assertion_consumer_service_url="${assertion_consumer_service_url}" \
