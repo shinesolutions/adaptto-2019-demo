@@ -5,6 +5,8 @@
 .yardwarns
 *.iml
 .Readme.md
+.conf
+/swagger-aem-osgi-demo/.conf
 /swagger-aem-osgi-demo/.Readme.md
 /.bundle/
 /swagger-aem-osgi-demo/.bundle/

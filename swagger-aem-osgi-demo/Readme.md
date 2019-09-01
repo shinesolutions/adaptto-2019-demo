@@ -150,3 +150,5 @@ author_verify_ssl=false \
 
 ## Sources
 [How to use Google Gsuite as SAML Provider in AEM](https://pillpall.github.io/aem/2019/05/05/Google-Gsuite-as-SAML-provider-in-AEM.html)
+
+[SAML app error messages](https://support.google.com/a/answer/6301076?hl=en)
