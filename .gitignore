@@ -19,8 +19,6 @@
 /inspec.lock
 /junit/
 /log/
-/modules/
-/swagger-aem-osgi-demo/modules/
 /pkg/
 /test/integration/.librarian
 /test/integration/.tmp

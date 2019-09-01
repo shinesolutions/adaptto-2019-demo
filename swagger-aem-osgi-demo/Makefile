@@ -1,7 +1,7 @@
 ci: clean deps lint package
 
 clean:
-	rm -rf Gemfile.lock bin/ pkg/ stage/ modules/ test/ vendor/
+	rm -rf Gemfile.lock bin/ pkg/ stage/ test/ vendor/
 
 deps:
 	gem install bundler --version=1.17.3

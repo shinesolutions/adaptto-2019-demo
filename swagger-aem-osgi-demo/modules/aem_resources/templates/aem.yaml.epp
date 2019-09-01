@@ -1,0 +1,25 @@
+---
+<% if $username != undef { -%>
+:username: '<%= $username %>'
+<% } -%>
+<% if $password != undef { -%>
+:password: '<%= $password %>'
+<% } -%>
+<% if $protocol != undef { -%>
+:protocol: '<%= $protocol %>'
+<% } -%>
+<% if $host != undef { -%>
+:host: '<%= $host %>'
+<% } -%>
+<% if $port != undef { -%>
+:port: <%= $port %>
+<% } -%>
+<% if $debug == true { -%>
+:debug: True
+<% } -%>
+<% if $debug == false { -%>
+:debug: False
+<% } -%>
+<% if $timeout != undef { -%>
+:timeout: <%= $timeout %>
+<% } -%>
