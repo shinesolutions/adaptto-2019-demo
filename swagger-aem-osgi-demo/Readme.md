@@ -31,12 +31,12 @@ For generating the OpenAPI Spec for the AEM OSGI Config nodes we are using the t
 
 Usage:
 ```
-author_verify_ssl=false \
-  author_protocol=https \
-	author_host=author.sandpit.aemopencloud.net \
-	author_port=443 \
-	author_username=admin \
-	author_password=admin \
+aem_verify_ssl=false \
+  aem_protocol=https \
+	aem_host=author.sandpit.aemopencloud.net \
+	aem_port=443 \
+	aem_username=admin \
+	aem_password=admin \
 	ruby tools/openapi_spec_generator.rb \
 	--in template/api.yml \
 	--out conf/api.yml
