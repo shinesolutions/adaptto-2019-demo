@@ -1,0 +1,86 @@
+info:
+  version: 0.0.1
+  title: aem
+  description: Convo specification for aem
+  license:
+    name: MIT
+  contact:
+    name: Cliffano Subagio
+    url: http://blog.cliffano.com
+    email: blah@cliffano.com
+  primary_language: en
+  timezone: Australia/Sydney
+middlewares:
+  openapi_cloudfunctions:
+    openapi:
+      node_modules:
+        api: node-swagger-aem
+        helper: convo-aem-helper
+    cloudfunctions:
+      project_id: convo-aem
+      credentials: ~/dev/workspace-shine/adaptto-2019-demo/aem-voice-demo/convo-aem/conf/credentials.json
+    dependencies:
+      - name: node-swagger-aem
+        version: 0.9.0
+      - name: convo-aem-helper
+        version: 0.0.1-pre.4
+agents:
+  dialogflow:
+    project_id: convo-aem
+conversations:
+  greetings:
+    replies:
+      en:
+        - Hello Adaptto Conference 2019, I am AEM.
+        - How can I help you?
+      en-au:
+        - G'day mates at Adaptto Conference 2019, I am AEM.
+        - How can I help you?
+      de:
+        - Guten Tag Adaptto Konferenz 2019, ich bin AEM.
+  unknowns:
+    replies:
+      en:
+        - Sorry, I do not understand what you said.
+        - Could you perhaps say that again?
+      en-au:
+        - Sorry, I do not understand what you said.
+        - Could you perhaps say that again?
+      de:
+        - Entschuldigung, ich verstehe nicht, was du gesagt hast.
+        - Könntest du das Bitte wiederholen?
+  queries:
+    - name: Install package ABC
+      messages:
+        en:
+          - Install package ABC
+        en-au:
+          - Install package ABC
+        de:
+          - Installiere Packet ABC
+      replies:
+        en:
+          - Package ABC has been installed.
+        en-au:
+          - Package ABC has been installed.
+        de:
+          - Packet ABC wurde installiert.
+      openapi_cloudfunctions:
+        operation_id: postPackageServiceJson
+    - name: Uninstall package ABC
+      messages:
+        en:
+          - Uninstall package ABC
+        en-au:
+          - Uninstall package ABC
+        de:
+          - Deinstalliere Packet ABC
+      replies:
+        en:
+          - Package ABC has been uninstalled.
+        en-au:
+          - Package ABC has been uninstalled.
+        de:
+          - Packet ABC wurde deinstalliert.
+      openapi_cloudfunctions:
+        operation_id: postPackageServiceJson

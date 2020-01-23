@@ -1,0 +1,9 @@
+.DS_Store
+specifications/openapi-aem.yaml
+generated/openapi-cloudfunctions-middleware/.serverless
+generated/openapi-cloudfunctions-middleware/node_modules
+stage/
+*.log
+conf/credentials.json
+generated/openapi-cloudfunctions-middleware/index.js
+node_modules/

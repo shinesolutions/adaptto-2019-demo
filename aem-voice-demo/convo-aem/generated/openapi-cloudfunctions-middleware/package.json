@@ -1,0 +1,16 @@
+{
+  "name": "aem",
+  "version": "0.0.1",
+  "description": "Convo specification for aem",
+  "main": "index.js",
+  "author": "Cliffano Subagio <blah@cliffano.com> (http://blog.cliffano.com)",
+  "license": "MIT",
+  "dependencies": {
+    "node-swagger-aem": "0.9.0",
+    "convo-aem-helper": "0.0.1-pre.4",
+    "convo-node": "^0.0.3"
+  },
+  "devDependencies": {
+    "serverless-google-cloudfunctions": "^1.2.0"
+  }
+}

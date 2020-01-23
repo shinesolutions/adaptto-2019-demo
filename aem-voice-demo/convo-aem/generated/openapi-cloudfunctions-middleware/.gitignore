@@ -1,0 +1,8 @@
+.DS_Store
+.tmp
+.env
+.serverless
+keyfile.json
+*.log
+node_modules
+tmp

@@ -1,0 +1,65 @@
+{
+  "name": "Welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+      
+        {
+          "type": "simple_response",
+          "lang": "en",
+          "platform": "google",
+          "textToSpeech": "Hello Adaptto Conference 2019, I am AEM."
+        },
+      
+        {
+          "type": "simple_response",
+          "lang": "en",
+          "platform": "google",
+          "textToSpeech": "How can I help you?"
+        },
+      
+        {
+          "type": "simple_response",
+          "lang": "en-au",
+          "platform": "google",
+          "textToSpeech": "G'day mates at Adaptto Conference 2019, I am AEM."
+        },
+      
+        {
+          "type": "simple_response",
+          "lang": "en-au",
+          "platform": "google",
+          "textToSpeech": "How can I help you?"
+        },
+      
+        {
+          "type": "simple_response",
+          "lang": "de",
+          "platform": "google",
+          "textToSpeech": "Guten Tag Adaptto Konferenz 2019, ich bin AEM."
+        }
+      
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    },
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    }
+  ]
+}

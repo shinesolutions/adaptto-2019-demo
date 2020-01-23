@@ -1,0 +1,27 @@
+{
+  "name": "convo-aem-helper",
+  "version": "0.0.1-pre.4",
+  "description": "Helper node.js module for Convo AEM",
+  "keywords": [
+    "convo",
+    "aem"
+  ],
+  "main": "./lib/index",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --timeout 5000 test/*/*.js",
+    "coverage": "node_modules/.bin/istanbul cover --dir stage/coverage _mocha -- test/*/*.js",
+    "publish-coverage": "cat stage/coverage.lcov | node_modules/coveralls/.bin/coveralls"
+  },
+  "dependencies": {
+    "lodash": "^4.7.11"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "license": "MIT"
+}
